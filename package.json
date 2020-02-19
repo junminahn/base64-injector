@@ -1,0 +1,51 @@
+{
+  "name": "base64-injector",
+  "description": "Convert font/image to base64 data url, and to inject src into style/html files",
+  "version": "0.1.0",
+  "author": "Junmin Ahn",
+  "license": "MIT",
+  "keywords": [
+    "base64",
+    "dataurl",
+    "font",
+    "image",
+    "fontface",
+    "encode",
+    "node"
+  ],
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/junminahn/base64-injector.git"
+  },
+  "bugs": {
+    "url": "https://github.com/junminahn/base64-injector/issues"
+  },
+  "scripts": {
+    "test": "mocha --exit test.js"
+  },
+  "files": [
+    "LICENSE",
+    "HISTORY.md",
+    "index.js",
+    "core.js",
+    "font-meta.js",
+    "image-meta.js",
+    "helpers.js"
+  ],
+  "engines": {
+    "node": ">= 8.0.0"
+  },
+  "dependencies": {
+    "cheerio": "^1.0.0-rc.3",
+    "css": "^2.2.4",
+    "file-type": "^14.1.2"
+  },
+  "devDependencies": {
+    "mocha": "^5.2.0",
+    "promise-synchronizer": "^1.1.8"
+  },
+  "peerDependencies": {
+    "promise-synchronizer": "^1.1.8"
+  }
+}
