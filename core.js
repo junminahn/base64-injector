@@ -205,7 +205,7 @@ const _updateCSSContent = (content, validator, dataInfoMap, fullpathMatch, cssPa
   const keys = Object.keys(dataInfoMap);
   const ast = css.parse(content);
 
-  const result = { modified: false, nFont: 0, nImage: 0 };
+  const result = { modified: false, nFont: 0, nImage: 0, type: '.css', parser: ast };
 
   each(ast.stylesheet.rules, rule => {
     if (_font && rule.type === 'font-face') {
@@ -318,7 +318,7 @@ const _updateHTMLContent = (content, validator, dataInfoMap, fullpathMatch, cssP
   const keys = Object.keys(dataInfoMap);
   const $ = cheerio.load(content);
 
-  const result = { modified: false, nFont: 0, nImage: 0 };
+  const result = { modified: false, nFont: 0, nImage: 0, type: '.html', parser: $ };
 
   $('img').each(function(i, elem) {
     const _this = $(this);
