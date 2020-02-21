@@ -297,7 +297,7 @@ const _updateCSSContent = (content, validator, dataInfoMap, fullpathMatch, cssPa
                 return false;
               }
             });
-            dec.value = nProps;
+            dec.value = nProp;
           }
         });
       }

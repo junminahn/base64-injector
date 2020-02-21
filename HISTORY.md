@@ -7,3 +7,8 @@
 ==================
 
   * Include parser into content output
+
+0.1.2 / 2020-02-21
+==================
+
+  * Bug fix: undefined var
